@@ -1,6 +1,7 @@
 {
         "options": {
                 "basedir": "/home/myuser/",
+                "openrtsp": "/usr/bin/openRTSP",
                 "interval": 1800,
                 "runtime": 86400
         },
