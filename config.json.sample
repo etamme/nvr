@@ -1,12 +1,17 @@
-[
-    {
-        "name": "camera1",
-        "url": "rtsp://192.168.1.10"
-    },
-    {
-        "name": "camera2",
-        "url": "rtsp://192.168.1.11"
-    }
-
-]
-
+{
+        "options": {
+                "basedir": "/home/myuser/",
+                "interval": 1800,
+                "runtime": 86400
+        },
+        "cameras": [
+                {
+                        "name": "camera1",
+                        "url": "rtsp://192.168.1.10"
+                },
+                {
+                        "name": "camera2",
+                        "url": "rtsp://192.168.1.11"
+                }
+        ]
+}
