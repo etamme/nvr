@@ -1,18 +1,24 @@
 {
         "options": {
-                "basedir": "/home/myuser/",
+                "basedir": "/home/user/nvr/",
                 "openrtsp": "/usr/bin/openRTSP",
-                "interval": 1800,
+                "interval": 900,
                 "runtime": 86400
         },
         "cameras": [
                 {
                         "name": "camera1",
-                        "url": "rtsp://192.168.1.10"
+                        "url": "rtsp://192.168.1.10",
+                        "width": 1920,
+                        "height": 1080
                 },
                 {
                         "name": "camera2",
-                        "url": "rtsp://192.168.1.11"
+                        "url": "rtsp://192.168.1.11",
+                        "width": 1080,
+                        "height": 720
                 }
+
+
         ]
 }

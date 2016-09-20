@@ -29,7 +29,9 @@ for camera in cameras:
 
   os.chdir(basedir+camera['name'])
   url=camera["url"]
-  args=" -B 10000000 -b 10000000 -4 -f 30 -w 1920 -h 1080 -F "+today+" -d "+runtime+" -P "+interval+" "
+  width=str(camera["width"])
+  height=str(camera["height"])
+  args=" -B 10000000 -b 10000000 -4 -f 30 -w "+width+" -h "+height+" -F "+today+" -d "+runtime+" -P "+interval+" "
   print(openrtsp+args+url)
   subprocess.Popen([openrtsp+args+url],shell=True)
 
